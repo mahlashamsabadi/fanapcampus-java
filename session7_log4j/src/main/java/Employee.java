@@ -30,9 +30,9 @@ public class Employee{
                     ,this.id,this.name,name));
             throw new InvalidValueException("The name is not valid");
         }
-        String preNAme = this.name;
+        String preName = this.name;
         this.name = name;
-        logger.debug(String.format("name of employee [%d] changed from [%s] to [%s]",this.id,preNAme,this.name));
+        logger.debug(String.format("name of employee [%d] changed from [%s] to [%s]",this.id,preName,this.name));
 
     }
 
